@@ -1,0 +1,23 @@
+
+<div *ngFor="let new of news">
+    <mat-card *ngIf=new.archived class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{new.title}}</mat-card-title>
+          <mat-card-subtitle>{{new.author}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+              {{new.content}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button (click)="delete(new)">Delete</button>
+        </mat-card-actions>
+        <mat-card-footer>
+            <p>
+                {{new.archiveDate | date:'medium'}}
+            </p>
+        </mat-card-footer>
+    </mat-card>
+<br>
+</div>

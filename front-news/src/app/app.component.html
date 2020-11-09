@@ -1,0 +1,18 @@
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-primary">
+  <div class="navbar-nav container justify-content-start">
+    <!-- logo -->
+    <a class="navbar-item mr-2">
+      <img routerLink="/" alt="Babel" width="40rem" src="../favicon.ico">
+    </a>
+    <a class="nav-item nav-link" routerLink="/news">Home</a>
+    <a class="nav-item nav-link" routerLink="/news-archived">News Archived</a>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+.example-card {
+    padding: 30px;
+  }
+  mat-card::ng-deep.mat-card-header-text {
+    width: 100%;
+  }
+
